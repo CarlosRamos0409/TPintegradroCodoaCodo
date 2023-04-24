@@ -1,0 +1,30 @@
+.carousel-caption{
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 4px;
+    line-height: 100%;
+}
+
+body{
+    background-color: bisque;
+}
+
+footer {
+    font-size: 16px;
+    
+    bottom: 0;
+    left: 0;
+    height: 4em;
+    background-color: rgb(37, 39, 38);
+    justify-content: center;
+    color:white;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+  }
