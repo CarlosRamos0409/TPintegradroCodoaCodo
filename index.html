@@ -26,14 +26,12 @@
       font-size: 14px
     }
 
-.navbar-header{
-  font-size: 16px
-}
-
 .form-control{
   font-size: 14px
 }
-
+.navbar-brand{
+  font-size: 20px;
+}
 .card-text{
   font-size: 12px;
 }
@@ -49,30 +47,33 @@
 
 <body>
     
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
-      <div class="navbar-header  text-white">
-          <img src="imagenes_integrador_front/codoacodo.png" width=120xp>
-          <class="navbar-brand" href="#">Conf Bs As
+      <img src="imagenes_integrador_front/codoacodo.png" width=120xp>
+      <a class="navbar-brand" href="#" >Conf Bs. As.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conviértete en orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Comprar tickets</a>
+          </li>
+        </ul>
       </div>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">La conferencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Los oradores</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">El lugar y la fecha</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Conviértete en orador</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success" href="#">Comprar tickets</a>
-        </li>
-      </ul>
-     </div>
+    </div>
   </nav>
 
 
@@ -98,7 +99,7 @@
             evento, a otros estudiantes de Codo a Codo y los oradores de primer<br>
             nivel que tenemos para ti. Te esperamos!</p>
             <div class="container">
-              <button type="button" class="btn btn-outline-primary">Quiero ser orador</button>
+              <button type="button" id="btnTransparente" >Quiero ser orador</button>
               <button type="button" class="btn btn-success">Comprar tickets</button>            
             </div>
 
@@ -215,6 +216,9 @@
           condado consolidada que cubre toda la ciudad (aproximadamente 600 Km<sup>2</sup> de superficie).
 
         </p>
+        <div class="container">
+          <button type="button" id="btnTransparente" >Conocé más</button>           
+        </div>
       </div>
     </div>
   </div>
@@ -250,36 +254,61 @@
   <br>
   
 
-  <footer>
-   
-      <div class="container-fluid">
-      <ul class="nav justify-content-center text-white">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Preguntas frecuentes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contáctanos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Prensa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Conferencias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Términos y condiciones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Privacidad</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Estudiantes</a>
-        </li>
-
-       </ul>
-      </div>
   
-</footer>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-bottom">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mx-auto text-white">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Preguntas frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conferencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Términos y condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Estudiantes</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener" >
+                <img src="imagenes_integrador_front/instagram.png" width=30xp>
+              </a>  
+            </li>
+            <li class="nav-item">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener" >
+                <img src="imagenes_integrador_front/facebook.png" width=30xp>
+              </a>  
+              
+            </li>
+            <li class="nav-item">
+              <a href="https://www.twitter.com" target="_blank" rel="noopener" >
+                <img src="imagenes_integrador_front/gorjeo.png" width=30xp>
+              </a> 
+              
+              
+            </li>
+           </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
 
 
 </body>
