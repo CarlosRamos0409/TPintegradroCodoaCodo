@@ -13,6 +13,21 @@ body{
     background-color:  #faca07 ;
 }
 
+#inputCategoria{
+    font-size: 15px;
+}
+
+#descuentoscards{
+   
+  align-items: center;
+  justify-content: center;
+}
+
+#total{
+    background-color: aqua;
+    font-weight: bold;
+  }
+
 #btnTransparente    {
         /* Color del texo */
         
